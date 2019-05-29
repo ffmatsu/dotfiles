@@ -5,7 +5,7 @@ if [ "$(uname)" = 'Darwin' ]; then
     alias ls='ls -G'
     export PATH=$PATH:~/bin
 else
-    eval `dircolors ~/.colorrc`
+    #eval `dircolors ~/.colorrc`
     alias ls='ls --color=auto'
 fi
 
@@ -13,3 +13,5 @@ alias l="ls"
 alias ll="ls -l"
 alias la="ls -a"
 
+
+export LESSCHARSET=utf-8
